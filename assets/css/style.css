@@ -60,6 +60,12 @@ a{
     padding: 35px;
 }
 
+.flex-container{
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+
 .about-me:after{
     content: "";
     display: block;
@@ -127,7 +133,7 @@ footer{
 
 .thumb{
     float: left;
-    max-width: 22.5%;
+    width: 200px;
     margin: 5px 1%;
     border: 1px solid black;
 
