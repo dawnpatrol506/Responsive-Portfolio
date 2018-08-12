@@ -221,7 +221,8 @@ footer{
     }
 
     footer{
-        position: relative;    
+        position: fixed;
+        bottom: 0px;    
     }
 
     .family-photo{
