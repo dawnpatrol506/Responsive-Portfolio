@@ -38,10 +38,6 @@ input{
     height: 60px;
 }
 
-.name-header{
-    
-}
-
 .nav-bar{
     grid-column: 4 / 5;
     font-size: 18px;
@@ -82,6 +78,7 @@ hr{
 
 .family-photo{
     max-width: 25%;
+    min-width: 300px;
     float: left;
     margin: 15px;
 
@@ -153,4 +150,82 @@ footer{
     content: "";
     display: block;
     clear: both;
+}
+
+
+@media screen and (max-width: 980px)
+{
+    .full-container{
+        grid-template-columns: 1fr 748px 1fr;
+
+    }
+
+    .header{
+        grid-template-columns: 4fr 1fr 2fr;
+    }
+
+    .name-box{
+        grid-column: 1 / 2;
+    }
+
+    .message{
+        padding: 90px 200px;
+    }
+
+}
+
+@media screen and (max-width: 768px)
+{
+    .full-container{
+        grid-template-columns: 1fr 640px 1fr;
+    }
+
+    .header{
+        grid-template-columns: 220px 1fr;
+    }
+
+    .nav-bar{
+        grid-column: 2 / 3;
+    }
+}
+
+@media screen and (max-width: 640px)
+{
+    .full-container{
+        grid-template-columns: 100%;
+        grid-template-rows: 120px 2fr 80px;
+    
+    }
+
+    .header{
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 2fr;
+    }
+
+    .name-box{
+        grid-column: 1 / 2;
+        grid-row: 1 /2;
+    }
+
+    .nav-bar{
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .about-me{
+        grid-column: 1 / 2;
+    }
+
+    .message{
+        padding: 0px;
+    }
+
+    footer{
+        position: relative;    
+    }
+
+    .family-photo{
+        float: none;
+        max-width: 80%;
+    }
 }
